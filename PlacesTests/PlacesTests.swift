@@ -14,7 +14,7 @@ extension URL {
     }
 }
 final class PlacesTests: XCTestCase {
-    
+    //example: wikipedia://places?long=-3.7495758&lat=40.4380638
     func testPlaceURL() throws {
         let expectedLat = 40.7143
         let expectedLong = -74.006
