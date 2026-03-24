@@ -7,6 +7,12 @@ This app is a test to demonstrate opening a latitude and longitude in wikipedia 
 I build the app using XCode 26.3.0, but it should build with any XCode after 26.0. 
 Minimum iOS version is iOS18.
 
+You need to build and run the modified wikipedia app to test this properly. Please go to fork: 
+[https://github.com/lucky-henry-stash/wikipedia-ios](https://github.com/lucky-henry-stash/wikipedia-ios)
+
+You can follow the build instructions provided by original author. However, the TLDR is to run `script/setup` then build and run the app. 
+I did the steps from XCode 26.3, but older versions should also be compatible. 
+
 ## Demo
 
 https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a
