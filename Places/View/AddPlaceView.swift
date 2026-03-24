@@ -57,7 +57,7 @@ struct AddPlaceView: View {
     }
     
     func isValid() -> Bool{
-        return latitudeErrorMessage?.isEmpty == true && longitudeErrorMessage?.isEmpty == true
+        return latitudeErrorMessage == nil && longitudeErrorMessage == nil
     }
     
     func addPlace() {
