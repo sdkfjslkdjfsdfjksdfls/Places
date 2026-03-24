@@ -14,6 +14,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+        }.onAppear {
+            Task {
+                do {
+                    try await print(PlacesClient().fetchLocations())
+                } catch {
+                    print(error)
+                }
+            }
         }
         .padding()
     }
