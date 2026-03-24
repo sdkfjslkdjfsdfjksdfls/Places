@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State var places: [Place] = []
     var body: some View {
-        List(places) {
-            PlaceView(place: $0)
-        }.onAppear {
+        NavigationView {
+            List(places) {
+                PlaceView(place: $0)
+            }
+            .navigationTitle("Places")
+        }
+        .onAppear {
             Task {
                 do {
                     try await places = PlacesClient().fetchLocations()
