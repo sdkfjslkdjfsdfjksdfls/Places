@@ -17,7 +17,7 @@ struct FormTextField: View {
         VStack(alignment: .leading){
             LabeledContent {
                 TextField(hintText, text: $value)
-                    .keyboardType(.decimalPad)
+                    .keyboardType(.numbersAndPunctuation)
             } label: {
               Text(labelText)
             }
