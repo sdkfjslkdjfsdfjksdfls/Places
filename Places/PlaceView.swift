@@ -17,11 +17,13 @@ struct PlaceView: View {
                     Text(place.name ?? "Untitled").font(.title2)
                     Text(place.prettyString())
                 }
+                .accessibilityElement(children: .combine)
                 .accessibilityLabel("Name: \(place.name ?? "Untitled"), coordinates: \(place.prettyString())")
                 Spacer()
                 Button("View in 'Wikipedia'",
                        action: openPlace
                 )
+                .accessibilityHint("View \(place.name ?? "Untitled") in Wikipedia")
                 .buttonStyle(.borderedProminent)
             }
         }
