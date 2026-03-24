@@ -1,6 +1,5 @@
 # Places
-This app is a test to demonstrate opening a latitude and longitude in wikipedia app.
-
+This app is a test to demonstrate fetching a list of locations and opening them in a modified Wikipedia app with their latitude and longitude via deeplinks. 
 
 ### Building and running
 
@@ -10,16 +9,21 @@ Minimum iOS version is iOS18.
 You need to build and run the modified wikipedia app to test this properly. Please go to fork: 
 [https://github.com/lucky-henry-stash/wikipedia-ios](https://github.com/lucky-henry-stash/wikipedia-ios)
 
-You can follow the build instructions provided by original author. However, the TLDR is to 
+You can follow the build instructions provided by original author here: https://github.com/lucky-henry-stash/wikipedia-ios?tab=readme-ov-file#building-and-running.
+
+But to simplify: 
 - run `script/setup`
 - then open the xcodeproject in xcode and run
 
-I did the steps from XCode 26.3, but older versions should also be compatible. 
+I did the steps from XCode 26.3, but older XCode versions should also be compatible. 
 
 For evaluation, you can view the code diff here:
 https://github.com/wikimedia/wikipedia-ios/compare/main...lucky-henry-stash:wikipedia-ios:main
 
-## Demo
+### Testing
+Tests are in /PlacesTests. You can run these directly in XCode.
+
+### Demo
 
 https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a
 
