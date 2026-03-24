@@ -8,7 +8,8 @@
 struct Locations: Decodable {
     let locations: [Place]
 }
-struct Place: Decodable {
+struct Place: Decodable, Identifiable {
+    var id: String { "\(long), \(lat)"}
     let name: String?
     let lat: Double
     let long: Double

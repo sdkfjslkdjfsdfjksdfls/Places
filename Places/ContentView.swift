@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var places: [Place] = []
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(places) {
+            PlaceView(place: $0)
         }.onAppear {
             Task {
                 do {
-                    try await print(PlacesClient().fetchLocations())
+                    try await places = PlacesClient().fetchLocations()
                 } catch {
                     print(error)
                 }
