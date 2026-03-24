@@ -8,7 +8,8 @@ import SwiftUI
 
 struct PlaceView: View {
     let place: Place
-    
+    @Environment(\.openURL) private var openURL
+
     var body: some View {
         HStack {
             HStack {
@@ -26,7 +27,9 @@ struct PlaceView: View {
     }
     
     func openPlace() {
-        print(place)
+        if let url = place.url {
+            openURL(url)
+        }
     }
 }
 
