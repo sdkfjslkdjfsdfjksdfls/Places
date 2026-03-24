@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var places: [Place] = []
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(places) {
                 PlaceView(place: $0)
             }
