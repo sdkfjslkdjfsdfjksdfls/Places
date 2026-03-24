@@ -38,20 +38,20 @@ struct AddPlaceView: View {
                     )
                 }
             }
-        }
-        .navigationTitle("Add New Place")
-        .toolbar {
-            ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
-                    dismiss()
+            .navigationTitle("Add New Place")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
                 }
-            }
-            
-            ToolbarItem(placement: .confirmationAction) {
-                Button("Add") {
-                    addPlace()
+                
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Add") {
+                        addPlace()
+                    }
+                    .disabled(!isValid())
                 }
-                .disabled(!isValid())
             }
         }
     }
