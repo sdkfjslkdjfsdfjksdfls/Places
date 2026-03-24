@@ -14,6 +14,7 @@ struct AddPlaceView: View {
     var latitudeErrorMessage: String? {
         validator.validateCoordinate(lat, coordinateType: .latitude)?.errorDescription
     }
+    
     @State private var name: String = ""
     @State private var lat: String = ""
     @State private var long: String = ""
@@ -23,37 +24,34 @@ struct AddPlaceView: View {
             Form {
                 Section(header: Text("New Place")) {
                     TextField("Name", text: $name)
-                    VStack(alignment: .leading){
-                        TextField("Latitude", text: $lat)
-                            .keyboardType(.decimalPad)
-                        if let latitudeErrorMessage {
-                            Text(latitudeErrorMessage)
-                        }
-                    }
-                    VStack(alignment: .leading){
-                        TextField("Longitude", text: $long)
-                            .keyboardType(.decimalPad)
-                        if let longitudeErrorMessage {
-                            Text(longitudeErrorMessage)
-                        }
-                    }
-
-                    
+                    FormTextField(
+                        value: $lat,
+                        errorString: .constant(latitudeErrorMessage),
+                        labelText: "Latitude",
+                        hintText: "90"
+                    )
+                    FormTextField(
+                        value: $long,
+                        errorString: .constant(longitudeErrorMessage),
+                        labelText: "Longitude",
+                        hintText: "90",
+                    )
                 }
             }
-            .navigationTitle("Add New Place")
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
-                        dismiss()
-                    }
+        }
+        .navigationTitle("Add New Place")
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel") {
+                    dismiss()
                 }
-                
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Add") {
-                        addPlace()
-                    }.disabled(!isValid())
+            }
+            
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Add") {
+                    addPlace()
                 }
+                .disabled(!isValid())
             }
         }
     }
