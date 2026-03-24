@@ -18,7 +18,7 @@ struct PlaceView: View {
                     Text("Coordinates: \(place.lat), \(place.long)")
                 }
                 Spacer()
-                Button("View in 'Places'",
+                Button("View in 'Wikipedia'",
                        systemImage: "mappin",
                        action: openPlace
                 ).buttonStyle(.borderedProminent)
