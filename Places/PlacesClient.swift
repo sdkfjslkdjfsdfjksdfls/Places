@@ -6,14 +6,6 @@
 //
 
 import Foundation
-struct Locations: Decodable {
-    let locations: [Place]
-}
-struct Place: Decodable {
-    let name: String?
-    let lat: Double
-    let long: Double
-}
 
 class PlacesClient {
     enum NetworkingError: Error {
