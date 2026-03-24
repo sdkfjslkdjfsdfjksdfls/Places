@@ -24,24 +24,29 @@ https://github.com/wikimedia/wikipedia-ios/compare/main...lucky-henry-stash:wiki
 Tests are in /PlacesTests. You can run these directly in XCode.
 
 ### Demo
+**From Fetched Data:**  
+[https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a](https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a)
 
-https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a
-
+**From user entry:**  
+[https://github.com/user-attachments/assets/630bca9b-70cd-4bef-b629-b4b849d13f41](https://github.com/user-attachments/assets/630bca9b-70cd-4bef-b629-b4b849d13f41)
 
 ## Screenshots
-Portrait
-<img width="1260" height="2736" alt="image" src="https://github.com/user-attachments/assets/9fa6742a-4b73-4b12-b65a-386d160edd7e" />
 
-Landscape
-<img width="2736" height="1260" alt="image" src="https://github.com/user-attachments/assets/850df135-541a-47b3-b22e-050ec3d5d691" />
+### Portrait
+[<img src="https://github.com/user-attachments/assets/e69df525-9807-4419-b955-788f92fc6e43" width="300" />](https://github.com/user-attachments/assets/e69df525-9807-4419-b955-788f92fc6e43)
 
-Accessibility size largest
-<img width="2736" height="1260" alt="image" src="https://github.com/user-attachments/assets/e53b13da-8db7-432f-93ff-c02bd7dd2bb0" />
+[<img src="https://github.com/user-attachments/assets/9fa6742a-4b73-4b12-b65a-386d160edd7e" width="300" />](https://github.com/user-attachments/assets/9fa6742a-4b73-4b12-b65a-386d160edd7e)
 
-Accessibility labels
-<img width="1380" height="665" alt="image" src="https://github.com/user-attachments/assets/027819a8-06a9-4a43-b259-e2e2a18c4a50" />
+### Landscape
+[<img src="https://github.com/user-attachments/assets/850df135-541a-47b3-b22e-050ec3d5d691" width="300" />](https://github.com/user-attachments/assets/850df135-541a-47b3-b22e-050ec3d5d691)
 
-<img width="1380" height="665" alt="image" src="https://github.com/user-attachments/assets/3fd1810b-1ddd-4c92-870c-6f209a72c835" />
+### Accessibility size largest
+[<img src="https://github.com/user-attachments/assets/e53b13da-8db7-432f-93ff-c02bd7dd2bb0" width="300" />](https://github.com/user-attachments/assets/e53b13da-8db7-432f-93ff-c02bd7dd2bb0)
+
+### Accessibility labels
+[<img src="https://github.com/user-attachments/assets/027819a8-06a9-4a43-b259-e2e2a18c4a50" width="300" />](https://github.com/user-attachments/assets/027819a8-06a9-4a43-b259-e2e2a18c4a50)
+
+[<img src="https://github.com/user-attachments/assets/3fd1810b-1ddd-4c92-870c-6f209a72c835" width="300" />](https://github.com/user-attachments/assets/3fd1810b-1ddd-4c92-870c-6f209a72c835)
 
 
 
