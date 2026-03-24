@@ -15,7 +15,7 @@ struct PlaceView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(place.name ?? "Untitled").font(.title2)
-                    Text("\(place.lat), \(place.long)")
+                    Text(place.prettyString())
                 }
                 Spacer()
                 Button("View in 'Wikipedia'",
