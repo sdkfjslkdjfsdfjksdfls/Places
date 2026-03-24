@@ -63,4 +63,39 @@ final class PlacesTests: XCTestCase {
         
         XCTAssertEqual(result, "52.00000 S, 4.00000 E")
     }
+    
+    func testLongitude() {
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("", coordinateType: .longitude),
+            FormError.missingLongitude
+        )
+        
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("196", coordinateType: .longitude),
+            FormError.invalidLongitude
+        )
+        
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("rubiks", coordinateType: .longitude),
+            FormError.invalidLongitude
+        )
+    }
+    
+    func testLatitude() {
+        
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("", coordinateType: .latitude),
+            FormError.missingLatitude
+        )
+        
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("123", coordinateType: .latitude),
+            FormError.invalidLatitude
+        )
+        
+        XCTAssertEqual(
+            FormValidator.validateCoordinate("rubiks", coordinateType: .latitude),
+            FormError.invalidLatitude
+        )
+    }
 }

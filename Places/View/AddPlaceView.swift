@@ -5,14 +5,12 @@ struct AddPlaceView: View {
     
     var onAdd: (Place) -> Void
     
-    var validator = FormValidator()
-    
     var longitudeErrorMessage: String? {
-        validator.validateCoordinate(long, coordinateType: .longitude)?.errorDescription
+        FormValidator.validateCoordinate(long, coordinateType: .longitude)?.errorDescription
     }
     
     var latitudeErrorMessage: String? {
-        validator.validateCoordinate(lat, coordinateType: .latitude)?.errorDescription
+        FormValidator.validateCoordinate(lat, coordinateType: .latitude)?.errorDescription
     }
     
     @State private var name: String = ""

@@ -24,13 +24,13 @@ enum FormError: Error, LocalizedError {
         }
     }
 }
-class FormValidator {
+enum FormValidator {
     enum CoordinateType {
         case latitude
         case longitude
     }
     
-    func validateCoordinate(_ coordinate: String, coordinateType: CoordinateType) -> FormError? {
+    static func validateCoordinate(_ coordinate: String, coordinateType: CoordinateType) -> FormError? {
         guard !coordinate.isEmpty else {
             switch coordinateType {
             case .latitude: return .missingLatitude
