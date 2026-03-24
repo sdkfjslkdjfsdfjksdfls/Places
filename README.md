@@ -11,7 +11,7 @@ You need to build and run the modified wikipedia app to test this properly. Plea
 
 You can follow the build instructions provided by original author here: https://github.com/lucky-henry-stash/wikipedia-ios?tab=readme-ov-file#building-and-running.
 
-But to simplify: 
+But to simplify to run wikipedia app you can: 
 - run `script/setup`
 - then open the xcodeproject in xcode and run
 
@@ -24,6 +24,10 @@ https://github.com/wikimedia/wikipedia-ios/compare/main...lucky-henry-stash:wiki
 Tests are in /PlacesTests. You can run these directly in XCode.
 
 ### Demo
+
+https://github.com/user-attachments/assets/98891873-8b83-4cfb-8b55-9efd742a198b
+
+
 
 https://github.com/user-attachments/assets/efd5f741-553e-43ba-a99e-758975798a0a
 
